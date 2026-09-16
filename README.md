@@ -1,3 +1,3 @@
-# StrideDP
+# BipedalWBC
 
-Website: https://czy213hd.github.io/StrideDP/
+Website: https://wholebodyrobotics.github.io/BipedalWBC/
