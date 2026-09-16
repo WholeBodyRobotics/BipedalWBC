@@ -247,6 +247,14 @@ body {
   margin-right: 0.5rem;
 }
 
+.author-row {
+  text-align: center;
+}
+
+.author-row-secondary {
+  margin-top: 0.35rem;
+}
+
 .publication-banner img {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
