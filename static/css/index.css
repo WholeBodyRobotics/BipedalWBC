@@ -337,6 +337,51 @@ body {
   font-weight: 500;
 }
 
+/* Real-world demo gallery */
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.demo-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.demo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.demo-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  width: calc(50% - 0.75rem);
+  justify-self: center;
+}
+
+.demo-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+}
+
+.demo-card figcaption {
+  padding: 0.9rem 1rem 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -537,6 +582,16 @@ code {
   
   .content.has-text-justified {
     font-size: 1rem;
+  }
+
+  .demo-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .demo-card:last-child:nth-child(odd) {
+    grid-column: auto;
+    width: 100%;
   }
 }
 
